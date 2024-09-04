@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Webcam with Face Tracking</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src 'self' https://tfhub.dev; script-src 'self' 'unsafe-eval'; style-src 'self';"
+    />
+  </head>
+  <body>
+    <h1>Virtual Webcam with Face Tracking</h1>
+    <select id="cameraSelect"></select>
+    <br /><br />
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="renderer.js"></script>
+  </body>
+</html>
